@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./wordle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="maincontent-container">
+        <div id ="game">
+            <div class="section-holder">
+                <section id ="header">
+                    <div class ="header-items" id = "help">
+                        <img class = "header-img" src ="./help.svg">
+                    </div>
+                    <div class ="header-items" id = "logo">
+                        <p id="wordle">WORDLE</p>
+                    </div>
+                    <div class ="header-items" id="stats">
+                        <img class = "header-img" src="./stats.svg">
+                    </div>
+                    <div  class ="header-items" id="wttings">
+                        <img class = "header-img" src="./setting.svg">
+                    </div>
+                </section>
+            </div>
+            <section id="word-boxes">
+                <div class="first-try">
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                </div>
+                <div class="second-try">
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box"> 
+                    </div>
+                </div>
+                <div class="third-try">
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                </div>
+                <div class="fourth-try">
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box"> 
+                    </div>
+                </div>
+                <div class="fifth-try">
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box"> 
+                    </div>
+                </div>
+                <div class="sixth-try">
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box">
+                    </div>
+                    <div class = "word-box"> 
+                    </div>
+                </div>
+            </section>
+            <section id="keyboard">
+                <div id="first-layer">
+                    <div class="letter">
+                        <button id="alphabets" data-key="Q">Q</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="W">W</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="E">E</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="R">R</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="T">T</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="Y">Y</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="U">U</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="I">I</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="O">O</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="P">P</button>
+                    </div>
+                </div>
+                <div id ="second-layer">
+                    <div class="letter">
+                        <button id="alphabets" data-key="A">A</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="S">S</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="D">D</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="F">F</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="G">G</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="H">H</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="J">J</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="K">K</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="L">L</button>
+                    </div>
+                </div>
+                <div id="third-layer">
+                    <div class="letter">
+                        <button id="enter" type="submit">Enter</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="Z">Z</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="X">X</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="V">V</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="B">B</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="N">N</button>
+                    </div>
+                    <div class="letter">
+                        <button id="alphabets" data-key="M">M</button>
+                    </div>
+                    <div class="letter">
+                        <button id="enter" type="reset">Backspace</button>
+                    </div>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="wordle.js"></script>
+</html>
