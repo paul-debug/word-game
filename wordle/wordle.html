@@ -8,188 +8,75 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="maincontent-container">
-        <div id ="game">
-            <div class="section-holder">
-                <section id ="header">
-                    <div class ="header-items" id = "help">
-                        <img class = "header-img" src ="./help.svg">
-                    </div>
-                    <div class ="header-items" id = "logo">
-                        <p id="wordle">WORDLE</p>
-                    </div>
-                    <div class ="header-items" id="stats">
-                        <img class = "header-img" src="./stats.svg">
-                    </div>
-                    <div  class ="header-items" id="wttings">
-                        <img class = "header-img" src="./setting.svg">
-                    </div>
-                </section>
+    <div class="main-container">
+        <header>
+            <div class = "menu-help" >
+                <button class="icon-left" id = "Menu" type="menu">
+                    <img id = "img-menu" src="./menu.svg">
+                </button>
+                <button class="icon-left" id="help">
+                    <img id = "help" src = "./help.svg"
+                </button>
             </div>
-            <section id="word-boxes">
-                <div class="first-try">
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
+            <div class = "title">Worldle</div>
+            <div class = "stats-settings">
+                <button class = "icon-right" id="stats">
+                    <img src="./stats.svg">
+                </button>
+                <button class="icon-right">
+                    <img src = "./settings.svg"
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class = "game-holder">
+                <div class = "first-row">
+                    <div id="word-box"><span></span></div>
+                    <div id="word-box"><span></span></div>
+                    <div id="word-box"><span></span></div>
+                    <div id="word-box"><span></span></div>
+                    <div id="word-box"><span></span></div>
                 </div>
-                <div class="second-try">
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box"> 
-                    </div>
+                <div class = "second-row">
+                    <div id="word-box"><span placeholder="c"></span></div>
+                    <div id="word-box"><span></span></div>
+                    <div id="word-box"><span></span></div>
+                    <div id="word-box"><span></span></div>
+                    <div id="word-box"><span></span></div>
                 </div>
-                <div class="third-try">
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
+                <div class = "third-row">
+                    <div id="word-box"><span></span></div>
+                    <div id="word-box"><span></span></div>
+                    <div id="word-box"><span></span></div>
+                    <div id="word-box"><span></span></div>
+                    <div id="word-box"><span></span></div>
                 </div>
-                <div class="fourth-try">
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box"> 
-                    </div>
+                <div class = "fourth-row">
+                    <div id="word-box"></div>
+                    <div id="word-box"></div>
+                    <div id="word-box"></div>
+                    <div id="word-box"></div>
+                    <div id="word-box"></div>
                 </div>
-                <div class="fifth-try">
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box"> 
-                    </div>
+                <div class = "fifth-row">
+                    <div id="word-box"></div>
+                    <div id="word-box"></div>
+                    <div id="word-box"></div>
+                    <div id="word-box"></div>
+                    <div id="word-box"></div>
                 </div>
-                <div class="sixth-try">
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box">
-                    </div>
-                    <div class = "word-box"> 
-                    </div>
+                <div class = "sixth-row">
+                    <div id="word-box"></div>
+                    <div id="word-box"></div>
+                    <div id="word-box"></div>
+                    <div id="word-box"></div>
+                    <div id="word-box"></div>
                 </div>
-            </section>
-            <section id="keyboard">
-                <div id="first-layer">
-                    <div class="letter">
-                        <button id="alphabets" data-key="Q">Q</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="W">W</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="E">E</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="R">R</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="T">T</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="Y">Y</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="U">U</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="I">I</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="O">O</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="P">P</button>
-                    </div>
-                </div>
-                <div id ="second-layer">
-                    <div class="letter">
-                        <button id="alphabets" data-key="A">A</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="S">S</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="D">D</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="F">F</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="G">G</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="H">H</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="J">J</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="K">K</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="L">L</button>
-                    </div>
-                </div>
-                <div id="third-layer">
-                    <div class="letter">
-                        <button id="enter" type="submit">Enter</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="Z">Z</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="X">X</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="V">V</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="B">B</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="N">N</button>
-                    </div>
-                    <div class="letter">
-                        <button id="alphabets" data-key="M">M</button>
-                    </div>
-                    <div class="letter">
-                        <button id="enter" type="reset">Backspace</button>
-                    </div>
-            </section>
-        </div>
+            </div>
+            <div class="keyboard">
+                
+            </div>
+        </main>
     </div>
 </body>
-<script src="wordle.js"></script>
 </html>
